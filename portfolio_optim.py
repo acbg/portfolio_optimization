@@ -11,6 +11,7 @@ returns = np.random.normal(0.0005, 0.02, (num_days, num_assets))  # Simulated da
 # Convert to DataFrame
 assets = ['Asset_' + str(i) for i in range(1, num_assets + 1)]
 returns_df = pd.DataFrame(returns, columns=assets)
+print(returns_df)
 
 # Step 2: Portfolio Metrics
 weights = np.random.random(num_assets)
